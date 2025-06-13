@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoGalaxy - Vehículos</title>
+  <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body class="compra">
+    <header>
+        <div class="logo-inicio">
+            <img src="Imagenes/logo.png" alt="Logo Auto Galaxy" class="logo">
+            <p class="marca">AUTOGALAXY</p>
+            <p class="frase">EN AUTO GALAXY TE LLEVAMOS AL VOLANTE DE TUS SUEÑOS<br>
+                EXPLORA NUESTRA SELECCIÓN DE VEHÍCULOS CONFIABLES, MODERNOS Y LISTOS PARA LA AVENTURA</p>
+                <a href="iniciarsesion.html" class="login-btn">Iniciar Sesión</a>
+            </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="compra.html">Compra</a></li>
+        <li><a href="venta.html">Venta</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+      </ul>
+    </nav>
+  </header>
+   <main class="container venta-container">
+    <section class="formulario-container">
+      <form class="formulario-venta">
+        <div class="fila">
+          <select name="matriz" required>
+            <option value="">Matriz</option>
+            <option value="Quito">Quito</option>
+            <option value="Guayaquil">Guayaquil</option>
+          </select>
+          <select name="ciudad" required>
+            <option value="">Ciudad</option>
+            <option value="Ambato">Ambato</option>
+            <option value="Cuenca">Cuenca</option>
+          </select>
+        </div>
+
+        <div class="fila">
+          <input type="text" name="marca" placeholder="Marca" required>
+          <input type="text" name="modelo" placeholder="Modelo" required>
+        </div>
+
+        <div class="fila">
+          <input type="number" name="año" placeholder="Año" required>
+          <input type="text" name="detalles" placeholder="Detalles" required>
+        </div>
+
+        <div class="fila">
+          <input type="text" name="nombres" placeholder="Nombres" required>
+          <input type="text" name="placa" placeholder="Placa" required>
+        </div>
+
+        <div class="fila fotos">
+          <label for="fotos">Fotos</label>
+          <input type="file" name="fotos[]" multiple accept="image/*">
+        </div>
+
+        <button type="submit" class="btn">Publicar</button>
+      </form>
+    </section>
+
+    <section class="preview-imagen">
+      <img src="https://media.elcomercio.com/wp-content/uploads/2025/01/Venta-vehiculos.jpg" alt="Vista previa">
+    </section>
+  </main>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2>AUTOGALAXI</h2>
+      <p>Ubicación: Av. Ladrón de Guevara E11-253, Quito 170143<br>
+      Teléfono: 099344635226<br>
+      Correo: autogalaxy@gmail.com.ec</p>
+    </div>
+    <div class="footer-right">
+      <p>Derechos Reservados</p>
+    </div>
+  </div>
+</footer>   
+
+</body>
+</html>

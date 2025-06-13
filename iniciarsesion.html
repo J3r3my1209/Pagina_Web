@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión - AutoGalaxy</title>
+  <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo-inicio">
+      <a href="index.html">
+      <img src="Imagenes/logo.png" alt="Logo Auto Galaxy" class="logo">
+      </a>
+      <p class="marca">AUTOGALAXY</p>
+      <p class="frase">EN AUTO GALAXY TE LLEVAMOS AL VOLANTE DE TUS SUEÑOS<br>
+         EXPLORA NUESTRA SELECCIÓN DE VEHÍCULOS CONFIABLES, MODERNOS Y LISTOS PARA LA AVENTURA</p>
+    </div>
+  </header>
+
+  <!-- Imagen central -->
+  <div class="hero">
+    <img src="imagenes/inicio.png" alt="Auto Galaxy" class="auto-img" >
+  </div>
+
+  <!-- Formulario de inicio de sesión -->
+  <main class="login-container">
+    <form class="formulario" id="loginForm">
+      <label>Correo</label>
+      <input type="email" id="email" placeholder="Ingresar" required>
+
+      <label>Contraseña</label>
+      <input type="password" id="password" placeholder="Ingresar" required>
+
+      <div class="recordar">
+        <input type="checkbox" id="recordar">
+        <label for="recordar">Recordar Contraseña</label>
+      </div>
+
+      <div class="botones">
+        <button type="submit">Iniciar Sesion</button>
+        <button type="button" onclick="location.href='login.html'">Registrarse</button>
+      </div>
+    </form>
+    <p class="olvide"><a href="#">¿olvidaste tu contraseña?</a></p>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2>AUTOGALAXI</h2>
+        <p>Ubicación: Av. Ladrón de Guevara E11-253, Quito 170143<br>
+        Teléfono: 099344635226<br>
+        Correo: autogalaxy@gmail.com.ec</p>
+      </div>
+      <div class="footer-right">
+        <p>Derechos Reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault(); 
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      if(email === 'ejemplo@gmail.com' && password === '12345') {
+        window.location.href = 'index.html';
+      } else {
+        alert('Correo o contraseña incorrectos');
+      }
+    });
+  </script>
+
+</body>
+</html>
